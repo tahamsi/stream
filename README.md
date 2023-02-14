@@ -30,5 +30,5 @@ ii) creating a tweeter stream socket
   create_stream(search_terms,bearer) #the default values for host and port are '127.0.0.1' and 5555 respectively.
 
 iii) creating an IoT socket
-  # download the related csv file from 
+  download the related csv file from https://github.com/tahamsi/stream/blob/main/fault_stream.csv
   getVibrationReadings('put your own path/fault_stream.csv') # the structure is like : "DateTime":"26\\/12\\/2020 14:51","Value":0.4796875
