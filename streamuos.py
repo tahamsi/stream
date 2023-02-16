@@ -20,6 +20,7 @@ class TweetListener(tweepy.StreamingClient):
     def on_tweet(self, tweet):
         if tweet.lang=="en" and tweet.referenced_tweets == None:
             clean_text = p.clean(tweet.text)
+            print(clean_text)
             self.client_socket.send(clean_text.encode("utf-8"))
             time.sleep(5)
         return True
