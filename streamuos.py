@@ -102,7 +102,7 @@ def getVibrationReadings(fileName, host='127.0.0.1', port=5556):
     print("Received request from: " + str(addr))
     count=0
     while count < len(ds):
-        c_socket.send(ds.iloc[count].value)
-        print(ds.iloc[count]['Value'].value)
+        c_socket.send(ds.iloc[count].values)
+        print(ds.iloc[count]['Value'].values)
         count +=1
         time.sleep(5)
